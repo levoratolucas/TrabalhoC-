@@ -10,7 +10,6 @@ namespace exe07
         {
             this.saldoMinimo=saldoMinimo;
             this.saldo = deposito;
-            this.titular = empresa.cnpj;
         }
         public double verificarSaldoMinimo(){
             return this.saldoMinimo;

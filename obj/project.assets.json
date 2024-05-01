@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\aula quinta\\aula2\\aula2\\exemplos\\exemplos\\exemplos.csproj",
+      "projectUniqueName": "D:\\aula quinta\\TrabalhoC-\\exemplos.csproj",
       "projectName": "exemplos",
-      "projectPath": "D:\\aula quinta\\aula2\\aula2\\exemplos\\exemplos\\exemplos.csproj",
+      "projectPath": "D:\\aula quinta\\TrabalhoC-\\exemplos.csproj",
       "packagesPath": "C:\\Users\\levor\\.nuget\\packages\\",
-      "outputPath": "D:\\aula quinta\\aula2\\aula2\\exemplos\\exemplos\\obj\\",
+      "outputPath": "D:\\aula quinta\\TrabalhoC-\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\levor\\AppData\\Roaming\\NuGet\\NuGet.Config",
