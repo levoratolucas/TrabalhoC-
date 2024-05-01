@@ -42,12 +42,15 @@ class Program
         // Console.WriteLine(moto.cilindrada);
 
         // verificação do exercicio 7
-        Empresa empresa = new Empresa("001.234.567.89");
-        ContaEmpresarial contaEmpresarial = new ContaEmpresarial(empresa,123456,134567);
-        contaEmpresarial.numeroConta=123456;
-        Console.WriteLine(contaEmpresarial.saldo);
+        // Empresa empresa = new Empresa("001.234.567.89");
+        // ContaEmpresarial contaEmpresarial = new ContaEmpresarial(empresa,123456,134567);
+        // contaEmpresarial.numeroConta=123456;
+        // Console.WriteLine(contaEmpresarial.saldo);
 
-        // CursoEspanhol curso = new CursoEspanhol("espanhol");
+        // verificação do exercicio 8
+        // CursoEspanhol curso = new CursoEspanhol("Full programação",2);
+        // curso.frequencia=80;
+        // Console.WriteLine(curso.apto());
 
     }
 }

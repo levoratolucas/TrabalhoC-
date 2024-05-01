@@ -1,9 +1,15 @@
 namespace exe08
-{    public class CursoEspanhol : Curso
+{
+    public class CursoEspanhol : Curso
     {
-        public string nome { get; set; }
-        public string fundacao { get; set; }
-        public string duracao { get; set; }
-        public CursoEspanhol(string nome):base(nome){}
+        public CursoEspanhol(string nome, int nivel) : base(nome, nivel) { }
+        public bool apto(){
+            switch(this.nivel){
+                case 1 :  return frequencia >= 70 ; break;
+                case 2 :  return frequencia >= 80; break;
+                case 3 :  return frequencia >= 90; break;
+                default: return false;
+            }
+        }    
     }
 }
