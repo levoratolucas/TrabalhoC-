@@ -4,6 +4,7 @@ using exe05;
 using exe06;
 using exe07;
 using exe08;
+using exe09;
 
 class Program
 {
@@ -51,6 +52,11 @@ class Program
         // CursoEspanhol curso = new CursoEspanhol("Full programação",2);
         // curso.frequencia=80;
         // Console.WriteLine(curso.apto());
+
+        ContaV conta = new ContaV();
+        conta.valor = 1000;
+        PagamentoBoleto pagamentoBoleto = new PagamentoBoleto();
+        Console.WriteLine(conta.cobrar(pagamentoBoleto));
 
     }
 }
