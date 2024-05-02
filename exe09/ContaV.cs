@@ -5,7 +5,7 @@ namespace exe09{
 
 
         public bool cobrar(IMetodoPagamento metodoPagamento){
-            return metodoPagamento.verificarStatus(this.conta);
+            return metodoPagamento.realizarPagamento(this.valor);
         }
     }
 }

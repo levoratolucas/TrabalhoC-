@@ -3,7 +3,7 @@ namespace exe09
     public interface IMetodoPagamento
     {
 
-        public bool realizarPagamento(); 
-        public bool verificarStatus(string conta);
+        public bool realizarPagamento(double valor); 
+        public double verificarStatus(ContaV conta);
     }
 }

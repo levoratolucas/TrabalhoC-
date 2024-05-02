@@ -2,13 +2,15 @@ namespace exe09
 {
     public class PagamentoBoleto : IMetodoPagamento
     {
+public bool pago {get;set;}
+public double dinheiro {get;set;}
 
+        public bool realizarPagamento(double valorPagar){
 
-        public bool realizarPagamento(){
-             return true;
+             return dinheiro == valorPagar;
         } 
-        public bool verificarStatus(string conta){
-            return true;
+        public double verificarStatus(ContaV conta){
+            return conta.valor;
         }
 
     }

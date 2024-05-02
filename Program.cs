@@ -1,15 +1,17 @@
 ﻿using System;
+using System.Data.SqlTypes;
 using exe04;
 using exe05;
 using exe06;
 using exe07;
 using exe08;
 using exe09;
+using exe10;
 
 class Program
 {
     static void Main()
-    {   
+    {
         // verificação do exercicio 4
         // Revenda revenda = new Revenda();
         // revenda.fornecedor = "ambev";
@@ -53,12 +55,25 @@ class Program
         // curso.frequencia=80;
         // Console.WriteLine(curso.apto());
 
-        ContaV conta = new ContaV();
-        conta.valor = 1000;
-        PagamentoBoleto pagamentoBoleto = new PagamentoBoleto();
-        Console.WriteLine(conta.cobrar(pagamentoBoleto));
+        // verificação do exercicio 9
+        // ContaV conta = new ContaV();
+        // conta.valor = 1000;
+        // PagamentoTransferencia pagamento = new PagamentoTransferencia();        
+        // pagamento.saldoContaBancaria = 1200;
+        // pagamento.autenticador("123");
+        // Console.WriteLine(conta.cobrar(pagamento));
+        // Console.WriteLine(pagamento.saldoContaBancaria);
 
+        // verificação do exercicio 10
+        string[] datas = new string[] { "10", "09", "8" };
+        string[] origens = new string[] { "curitiba", "salvador" };
+        string[] destinos = new string[] { "curitiba", "salvador" };
+        Companhia companhia = new Companhia(origens, destinos, datas);
+        ReservaRegular reserva = new ReservaRegular();
+        string msg;
+        msg = companhia.registrarReserva(reserva, "10", "curitiba", "salvador");
+        Console.WriteLine(msg);
+        
     }
 }
 
-// 4.	Crie uma classe Produto que represente um produto em uma loja online. A classe deve ter os seguintes atributos: Nome, Preco, QuantidadeEmEstoque. Implemente métodos para adicionar e remover unidades do estoque, e um método para calcular o valor total do produto em estoque. Os métodos devem alterar o estado do objeto instanciado
